@@ -31,12 +31,22 @@ public class Main {
             Movie movie2 = (Movie) factory.getBean("movie1");
             System.out.println("movie actor details2:"+movie2);
 
+        Movie movie3 = (Movie) applicationContext.getBean("movie2");
+        System.out.println("movie actor details1 : " + movie3);
 
-            BeanDefinitionRegistry beanDefinitionRegistry=new DefaultListableBeanFactory();
+        Movie movie4 = (Movie) applicationContext.getBean("movie2");
+        System.out.println("movie actor details1 : " + movie4);
+
+        System.out.println(movie3==movie4);
+
+
+
+
+          /*  BeanDefinitionRegistry beanDefinitionRegistry=new DefaultListableBeanFactory();
             BeanDefinitionReader beanDefinitionReader=new XmlBeanDefinitionReader(beanDefinitionRegistry);
             beanDefinitionReader.loadBeanDefinitions(new ClassPathResource("beans.xml"));
             Movie movie3=(Movie)((DefaultListableBeanFactory)beanDefinitionRegistry).getBean("movie");
-            System.out.println("Actor information using application context:\n" +movie3);
+            System.out.println("Actor information using application context:\n" +movie3);  */
 
         }
 }
