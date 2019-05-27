@@ -26,8 +26,8 @@
     <bean id="app1" class="com.stackroute.awareinterface.BeanFactoryAwareDemo"></bean>
     <bean id="app2" class="com.stackroute.awareinterface.BeanNameAwareDemo"></bean>
     <bean id="app3" class="com.stackroute.awareinterface.ResourceLoaderAwareDemo"></bean>
-
-
+    <bean id="beanLifeCycleDemo" class="com.stackroute.demo.BeanLifeCycle" init-method="customInit"
+        destroy-method="customDestroy"/>
     <!--<bean id="movie1" class="com.stackroute.domain.Movie" autowire="byType">
 &lt;!&ndash;        <property name="actor" value="actor"/>&ndash;&gt;
         <property name="id" value="101"/>
