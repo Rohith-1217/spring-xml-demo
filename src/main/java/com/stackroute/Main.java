@@ -23,23 +23,19 @@ public class Main {
 
             Movie movie = (Movie) applicationContext.getBean("movie");
             System.out.println("movie actor details : " + movie);
-
             Movie movie1 = (Movie) applicationContext.getBean("movie1");
             System.out.println("movie actor details1 : " + movie1);
-
-
+/*
             Movie movie2 = (Movie) factory.getBean("movie1");
-            System.out.println("movie actor details2:"+movie2);
-
+            System.out.println("movie actor details2:"+movie2);*/
+/*
         Movie movie3 = (Movie) applicationContext.getBean("movie2");
         System.out.println("movie actor details1 : " + movie3);
 
         Movie movie4 = (Movie) applicationContext.getBean("movie2");
         System.out.println("movie actor details1 : " + movie4);
 
-        System.out.println(movie3==movie4);
-
-
+        System.out.println(movie3==movie4);  */
 
 
           /*  BeanDefinitionRegistry beanDefinitionRegistry=new DefaultListableBeanFactory();
